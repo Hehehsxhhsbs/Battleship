@@ -79,8 +79,8 @@ class Main {
         
         System.out.println("Player 2 place ships:\n");
         for(int i = 0; i < 5; i++){
-            Functions.board(player1Attack, player1Fleet, 1);
-            Functions.placeShipsText(1);
+            Functions.board(player1Attack, player2Fleet, 2);
+            Functions.placeShipsText(2);
             shipToPlace = input.nextLine();
             System.out.println("What row do you want to start the ship?");
             row = input.nextInt();
