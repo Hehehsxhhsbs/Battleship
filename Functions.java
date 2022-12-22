@@ -2,7 +2,7 @@ class Functions{
 	public static final String[] letters = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J"};
 	public static final int[] numbers = {1,2,3,4,5,6,7,8,9,10};
     public static final String[] ships = {"Carrier", "Battleship", "Cruiser", "Submarine", "Destroyer"};
-    public static final int[] shipLength = {5,4,3,3,2};
+    public static final int[] shipLength = {4,3,2,2,1};
 
 	public static void board (String[][] top, String[][] bottom, int player){
 		//Top
@@ -62,7 +62,7 @@ class Functions{
         int colum = (int)colums - 65;
         if(shipType.equalsIgnoreCase(ships[0])){
             ship = 0;
-            boardToPlace[row][colum] = "I";
+            boardToPlace[row][colum] = "I"; 
             if(dir.equalsIgnoreCase(north)){
                 for(int i = 0; i < shipLength[ship]; i++){
                     row--;
@@ -249,5 +249,13 @@ class Functions{
         ships[2] = "Cruiser";
         ships[3] = "Submarine";
         ships[4] = "Destroyer";
+    }
+
+    public static int CharToInt(char letter){
+        int letterAsInt = 100;
+        if(letter == 'A'){
+
+        }
+        return letterAsInt;
     }
 }
